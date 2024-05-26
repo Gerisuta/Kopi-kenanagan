@@ -1,0 +1,224 @@
+:root {
+  --primary: #0099ff;
+  --bg: #fff;
+  --beta1: rgb(147, 221, 255);
+  --beta2: #8219e4;
+  --beta3: #0a6ff3;
+}
+body {
+  font-family: "poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/*navbar*/
+
+.navbar {
+  width: 100%;
+  background: var(--primary);
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  display: flex;
+  position: fixed;
+  z-index: 0;
+  padding: 10px 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .logo a {
+  border-bottom: whitesmoke solid 2px;
+  border-left: whitesmoke solid 2px;
+  border-radius: 10px;
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium";
+  text-decoration: none;
+  color: #ffffff;
+}
+.navbar .logo a span {
+  color: #f50d0d;
+}
+.navbar .menu-bar {
+  font-size: 20px;
+}
+.navbar .menu-bar {
+  text-transform: capitalize;
+  box-sizing: border-box;
+}
+.navbar .menu-bar a {
+  color: #eceef0;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0px 20px;
+  padding: 0 20px;
+  border-radius: 50px;
+  font-weight: bolder;
+}
+.navbar .menu-bar a:hover {
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #0a6ff3;
+  background-color: #eee;
+  font-weight: bolder;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.navbar a {
+  text-decoration: none;
+  color: aliceblue;
+  position: relative;
+}
+
+.navbar .logo-menu a {
+  padding: 10px 20px;
+  border-radius: 0 20px;
+  border: #e0e2e4 solid 2px;
+  font-weight: bold;
+}
+.navbar .logo-menu a:hover {
+  color: #0a6ff3;
+  border-radius: 0 20px;
+  border: #e0e2e4 solid 2px;
+  font-weight: bold;
+  background-color: #eef0f3;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.navbar .icons {
+  color: #ffffff;
+  background-color: transparent;
+  padding: 8px 10px;
+  border-radius: 30px;
+  border: #ffffff solid 1px;
+  align-items: center;
+  text-align: center;
+}
+.navbar .icons:hover {
+  background-color: rgba(235, 235, 235, 0.3);
+  padding: 8px 10px;
+  border-radius: 30px;
+  border: #ffffff solid 1px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+
+/*section mulai*/
+
+.mulai svg {
+  position: fixed;
+}
+.mulai .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--bg);
+}
+.mulai .container h1 {
+  font-size: 50px;
+  color: var(--primary);
+}
+.mulai .container p {
+  font-size: 20px;
+  color: #1b1b1b;
+}
+
+.mulai .container a {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #02142c;
+  font-size: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 10px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mulai .container a:hover {
+  background-color: #b2cbfa;
+}
+
+/*didalam menu login*/
+
+.mulai .input123 {
+  text-align: center;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1;
+  width: 600px;
+  height: 450px;
+  display: none;
+  margin-top: 200px;
+  background-color: var(--bg);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mulai .input123 h1 {
+  font-size: 30px;
+  color: #0963da;
+  text-shadow: none;
+}
+
+.mulai .input123 p {
+  text-shadow: none;
+  color: #02142c;
+}
+.mulai .input123 input {
+  width: 80%;
+  height: 30px;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 30px;
+  outline: none;
+  border-color: #0a6ff3;
+}
+.mulai .input123 button {
+  padding: 10px 20px;
+  background-color: #0a6ff3;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.mulai .input123 button:hover {
+  background-color: #eceef0;
+  color: #0a6ff3;
+  cursor: pointer;
+}
+.mulai .input123.active {
+  display: block;
+}
+
+/**media Queris**/
+
+/*laptop*/
+
+@media (max-width: 1306px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/*tablet*/
+@media (max-width: 760px) {
+  html {
+    font-size: 80%;
+  }
+  .navbar .menu-bar a {
+    display: none;
+  }
+}
+
+/*hape*/
+@media (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+}
